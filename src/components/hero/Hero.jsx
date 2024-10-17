@@ -1,5 +1,6 @@
 import "./hero.scss"
 import { motion } from "framer-motion" 
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const textVariants ={
   initial:{
@@ -39,17 +40,17 @@ const slideVariants ={
   },
 }
 
+
 const Hero = () => {
+
+
   return (
-    <div className="hero">
+    <div id="Homepage" className="hero">
       <div className="wrapper">
       <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
         <motion.h2 variants={textVariants}>LALIT MOHANTY</motion.h2>
         <motion.h1 variants={textVariants}>Fullstack Web developer</motion.h1>
-        <motion.div variants={textVariants} className="buttons">
-          <motion.button variants={textVariants}>See the Latest Works</motion.button>
-          <motion.button variants={textVariants}>Contact Me</motion.button>
-        </motion.div>
+        <motion.button variants={textVariants}><AnchorLink offset={50} href="#Contact">Contact Me</AnchorLink></motion.button>
         <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
       </motion.div>
       </div>

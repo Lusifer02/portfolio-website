@@ -8,9 +8,7 @@ const Contact = () => {
 
     const ref = useRef();
     const formRef = useRef();
-    // const [error, setError] = useState(false);
-    // const [success, setSuccess] = useState(false);
-
+    
     const sendEmail = (e) => {
         e.preventDefault();
     
@@ -39,7 +37,7 @@ const Contact = () => {
 
     const isInView = useInView(ref, {margin:"-100px"});
   return (
-    <div ref={ref} className="Contact" >
+    <div id="Contact" ref={ref} className="Contact" >
         <div className="textContainer"  >
             <h1 >Let's work together</h1>
             <div className="item">

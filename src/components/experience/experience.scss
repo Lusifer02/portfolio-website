@@ -1,63 +1,59 @@
 .experience{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
 
-    .progress{
-        position: sticky;
-        top: 0;
-        left: 0;
-        padding-top: 50px;
-        text-align: center;
-        color: orange;
-        font-size: 36px;
+    .titleContainer{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 50px;
+        justify-content: center;
+        margin-top: 100px;
+        gap: 20px;
 
-        .progressBar{
-            height: 10px;
-            background-color: white;
+        .tile{
+            font-weight: 200;
         }
     }
 
-    .container{
+    .listContainer{
+
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
+        max-width: 1366px;
+        margin: auto;
 
-        .wrapper{
-            max-width: 1366px;
-            height: 100%;
-            margin: auto;
+        .box{
+            padding: 50px;
+            border: 0.5px solid gray;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 50px;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
 
-            .imageContainer{
-                flex: 1;
-                height: 50%;
-
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            h2{
+                font-size: 28px;
             }
-    
-            .textContainer{
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-
-                h2{
-                    font-size: 20px;
-                }
-                p{
-                    color: gray;
-                    font-size: 20px;
-                }
+            h3{
+                font-style: oblique;
             }
+            h4{
+               
+                font-weight: 200;
+            }
+            p{
+                text-align: justify;
+                font-weight: 500;
+            }
+        }
+        .box:hover{
+            background-color: whitesmoke;
+            color: black;
+            transform: scale(1.2);
+            transition-duration: 0.5s;
         }
     }
 }
