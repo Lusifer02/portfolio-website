@@ -3,7 +3,7 @@ import { animate, color, motion, stagger } from "framer-motion"
 
 const variants = {
     initial:{
-        x:-500,
+        x: -300,
         y: 100,
         opacity:0,
     },
@@ -21,11 +21,11 @@ const variants = {
 const Experience = () => {
   return (
     <motion.div className="experience" variants={variants} initial="initial" whileInView="animate">
-      <motion.div className="titleContainer" variants={variants}>
+      <div className="titleContainer" variants={variants}>
         <div className="title">
-          <h1><motion.b whileHover={{color:"orange"}}>Work</motion.b> experience</h1>
+          <h1><motion.b whileInView={{color:"orange"}}>Work</motion.b> Experience</h1>
         </div>
-      </motion.div>
+      </div>
       <motion.div className="listContainer" variants={variants} >
         <div className="box">
           <motion.h2 whileHover={{color:"orange"}}>Role</motion.h2>

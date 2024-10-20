@@ -3,6 +3,8 @@ import "./contact.scss"
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp, faTwitter, faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
 
@@ -37,14 +39,15 @@ const Contact = () => {
 
     const isInView = useInView(ref, {margin:"-100px"});
   return (
-    <div id="Contact" ref={ref} className="Contact" >
+    <div className="container">
+        <div id="Contact" ref={ref} className="Contact" >
         <div className="textContainer"  >
             <h1 >Let's work together</h1>
-            <div className="item">
+            <div className="item1">
                 <h2>phone</h2>
                 <span>9267905302</span>
             </div>
-            <div className="item">
+            <div className="item2">
                 <h2>Mail</h2>
                 <span>lalitmohanty2002@gmail.com</span>
             </div>
@@ -59,7 +62,7 @@ const Contact = () => {
 
         <motion.div className="phoneSvg" initial={{opacity:1}} whileInView={{opacity:0}} transition={{delay:3, duration:1}}>
 
-        <svg width="400px" height="400px" viewBox="-1 -1 35 34">
+        <svg viewBox="-1 -1 35 34">
             <motion.path fill="none" initial={{pathLength:0}} animate={isInView &&{pathLength:1}} transition={{duration:3}} d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
 		 M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
 		C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
@@ -76,14 +79,46 @@ const Contact = () => {
 
         </svg>
         </motion.div> 
-        <motion.form ref={formRef} onSubmit={sendEmail} initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:4, duration:1}}>
+        <motion.form 
+        ref={formRef} 
+        onSubmit={sendEmail} 
+        initial={{opacity:0}} 
+        whileInView={{opacity:1}} 
+        transition={{delay:4, duration:1}}>
                 <input type="text" required placeholder="Name" name="name"/>
                 <input type="email" required placeholder="Email" name="email"/>
                 <textarea rows={8} placeholder="Type messeage here..." name="message"/>
                 <button className="btn btn1">Submit</button>
-            </motion.form>
+        </motion.form>
+
         </div>
+        
     </div>
+    <div className="footer">
+    <div className="footer-content">
+        <p>© 2024 Lalit Mohanty.  All rights reserved.</p>
+        <div className="social-icons">
+          <a href="https://wa.me/9267905302 " target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faWhatsapp} className="icon" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} className="icon" />
+          </a>
+          <a href="https://www.instagram.com/lusifer02/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className="icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/lalit-mohanty/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} className="icon" />
+          </a>
+          <a href="https://github.com/Lusifer02" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} className="icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
   )
 }
 

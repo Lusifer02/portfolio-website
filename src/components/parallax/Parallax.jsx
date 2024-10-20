@@ -16,9 +16,9 @@ const Parallax = ({type}) => {
   const yBg = useTransform(scrollYProgress, [0,1], ["0%", "100%"]);
 
   return (
-    <div className="parallax" ref={ref} style={{background:type === "experience" ? "linear-gradient(180deg, #111132, #0c0c1d)" : "linear-gradient(180deg, #111132, #505064)"}}>
+    <div className="parallax" ref={ref} style={{background:type === "experience" ? "linear-gradient(180deg, #111132, #0c0c1d)" : "linear-gradient(180deg, #0c0c1d, #111132)"}}>
 
-        <motion.h1 style={{y:yText}}>{type === "experience" ? "work experince" : "projects"}</motion.h1>
+        <motion.h1 style={{y:yText}}>{type === "experience" ? "Where i've Worked" : "projects"}</motion.h1>
         <motion.div className="mountains"></motion.div>
         <motion.div style={{y:yBg}} className="planets"></motion.div>
         <motion.div style={{x: yBg}} className="stars"></motion.div>

@@ -50,7 +50,7 @@ const Hero = () => {
       <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
         <motion.h2 variants={textVariants}>LALIT MOHANTY</motion.h2>
         <motion.h1 variants={textVariants}>Fullstack Web developer</motion.h1>
-        <motion.button variants={textVariants}><AnchorLink offset={50} href="#Contact">Contact Me</AnchorLink></motion.button>
+        <button variants={textVariants}><AnchorLink offset={50} href="#Contact">Contact Me</AnchorLink></button>
         <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
       </motion.div>
       </div>

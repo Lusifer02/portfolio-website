@@ -20,11 +20,11 @@ const App = () => {
     </section>
     <section id="Experience"><Parallax type ="experience"/></section>
     <section><Experience/></section>
-    <section id="Projects"><Parallax type ="projects"/></section>
-    <Projects/>
     <section id="Skills">
       <Skills/>
     </section>
+    <section id="Projects"><Parallax type ="projects"/></section>
+    <Projects/>
     <section id="Contact">
       <Contact/>
     </section>

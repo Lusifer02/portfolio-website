@@ -44,7 +44,7 @@
 
             button{
                 display: flex;
-                z-index: 999;
+                z-index: 3;
                 padding: 20px;
                 border: 1px solid white;
                 border-radius: 10px;
@@ -70,6 +70,9 @@
     .imageContainer{
         height: 100%;
         position: absolute;
+        
+        justify-content: center;
+        align-items: center;
         top: 0;
         right: 0;
 
