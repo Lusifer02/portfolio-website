@@ -21,9 +21,8 @@
             align-items: center;
             position: absolute;
             right: 0;
-            
             @include mobile{
-                height: 50%;
+                height: 30%;
                 width: 100%;
                 bottom: 0;
             }
