@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import "./Projects.scss";
+import "./projects.scss";
 
 const items = [
   {
@@ -80,4 +80,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;
