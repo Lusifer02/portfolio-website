@@ -45,7 +45,7 @@ const Contact = () => {
             <h1 >Let's work together</h1>
             <div className="item1">
                 <h2>phone</h2>
-                <span>9267905302</span>
+                <span>+91-9267905302</span>
             </div>
             <div className="item2">
                 <h2>Mail</h2>
@@ -108,7 +108,7 @@ const Contact = () => {
             <FontAwesomeIcon icon={faInstagram} className="icon" />
           </a>
           <a href="https://www.linkedin.com/in/lalit-mohanty/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            <FontAwesomeIcon icon={faLinkedin} className="icon"/>
           </a>
           <a href="https://github.com/Lusifer02" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} className="icon" />

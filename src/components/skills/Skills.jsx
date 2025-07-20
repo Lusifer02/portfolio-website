@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaPython } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTypescript, SiShadcnui, SiRecoil } from 'react-icons/si';
+import { FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaGithub, FaBootstrap } from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiTypescript, SiShadcnui, SiNetlify  } from 'react-icons/si';
+import { RiTailwindCssFill } from "react-icons/ri";
 import "./skills.scss";
 import { motion } from 'framer-motion';
 
@@ -27,10 +28,6 @@ const Skills = () => {
     <motion.section id='Skills' className="skills-section" variants={variants} initial="initial" whileInView="animate">
       <motion.h2 variants={variants} className="skills-title">My Skills</motion.h2>
       <motion.div variants={variants} className="skills-container">
-        <motion.div  className="skill">
-          <FaCss3Alt className="skill-icon" />
-          <span>CSS3</span>
-        </motion.div>
         <motion.div variants={variants} className="skill">
           <FaJs className="skill-icon" />
           <span>JavaScript</span>
@@ -40,20 +37,8 @@ const Skills = () => {
           <span>React</span>
         </motion.div>
         <motion.div variants={variants} className="skill">
-          <SiRecoil className="skill-icon" />
-          <span>Recoil</span>
-        </motion.div>
-        <motion.div variants={variants} className="skill">
-          <SiShadcnui className="skill-icon" />
-          <span>Shadcn</span>
-        </motion.div>
-        <motion.div variants={variants} className="skill">
           <SiTypescript className="skill-icon" />
           <span>TypeScript</span>
-        </motion.div>
-        <motion.div variants={variants} className="skill">
-          <FaPython className="skill-icon" />
-          <span>Python</span>
         </motion.div>
         <motion.div variants={variants} className="skill">
           <FaNodeJs className="skill-icon" />
@@ -72,8 +57,32 @@ const Skills = () => {
           <span>SQL</span>
         </motion.div>
         <motion.div variants={variants} className="skill">
+          <FaCss3Alt className="skill-icon" />
+          <span>CSS3</span>
+        </motion.div>
+        <motion.div variants={variants} className="skill">
+          <RiTailwindCssFill className="skill-icon" />
+          <span>TailwindCSS</span>
+        </motion.div>
+        <motion.div variants={variants} className="skill">
+          <FaBootstrap className="skill-icon" />
+          <span>Bootstrap</span>
+        </motion.div>
+        <motion.div variants={variants} className="skill">
+          <SiShadcnui className="skill-icon" />
+          <span>Shadcn</span>
+        </motion.div>
+        <motion.div variants={variants} className="skill">
+          <FaGithub  className="skill-icon" />
+          <span>Github</span>
+        </motion.div>
+        <motion.div variants={variants} className="skill">
           <FaGitAlt className="skill-icon" />
           <span>Git</span>
+        </motion.div>
+        <motion.div variants={variants} className="skill">
+          < SiNetlify  className="skill-icon" />
+          <span>Netlify</span>
         </motion.div>
       </motion.div>
     </motion.section>

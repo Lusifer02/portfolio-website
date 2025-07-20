@@ -7,20 +7,22 @@ const items = [
     id:1,
     title:"Crypto-Currency Price Tracker App",
     img:"https://images.pexels.com/photos/5980866/pexels-photo-5980866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio doloribus adipisci ab ea, expedita quod! Architecto, repellat non, ab sapiente ratione beatae repudiandae eveniet id ad voluptatibus voluptatum laborum aliquam.",
+    desc:" Aggregated live data from cryptocurrency exchanges providing the latest price information on major cryptocurrencies. The app is built using React, Tailwind CSS and coniGecko API. It features a responsive design and provides real-time updates on cryptocurrency prices.",
     url:"https://crypto-place-lusifer02.netlify.app/"
   },
-  {
-    id:2,
-    title:"Exp2",
-    img:"https://images.pexels.com/photos/18936031/pexels-photo-18936031/free-photo-of-korean-bbq-restaurant.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-    desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio doloribus adipisci ab ea, expedita quod! Architecto, repellat non, ab sapiente ratione beatae repudiandae eveniet id ad voluptatibus voluptatum laborum aliquam."
-  },
+  // {
+  //   id:2,
+  //   title:"Exp2",
+  //   img:"https://www.boardinfinity.com/blog/heap-sort-algorithm/",
+  //   desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio doloribus adipisci ab ea, expedita quod! Architecto, repellat non, ab sapiente ratione beatae repudiandae eveniet id ad voluptatibus voluptatum laborum aliquam."
+  // },
   {
     id:3,
-    title:"Exp3",
-    img:"https://images.pexels.com/photos/21193046/pexels-photo-21193046/free-photo-of-a-boat-is-docked-in-front-of-a-row-of-buildings.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-    desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio doloribus adipisci ab ea, expedita quod! Architecto, repellat non, ab sapiente ratione beatae repudiandae eveniet id ad voluptatibus voluptatum laborum aliquam."
+    title:"Sorting Visualizer",
+    img:"https://images.pexels.com/photos/7269676/pexels-photo-7269676.jpeg",
+    desc:"Interactive tool showcasing 6 sorting methods (Bubble, Selection, Insertion, Merge, Quick, Heap) with real-time array visualization. Features adjustable array size, speed control, light/dark mode, and step-by-step sorting process with comparison/swap tracking. Built with HTML, CSS (Tailwind), and JavaScript.",
+    url:"https://cryptoplace-cryptoprice-tracker.netlify.app/"
+    
   }
 ];
 

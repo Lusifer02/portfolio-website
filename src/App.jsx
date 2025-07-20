@@ -9,17 +9,24 @@ import Skills from "./components/skills/Skills";
 import About from "./components/about/About"
 
 
+
 const App = () => {
   return <div>
     <section id="Homepage">
       <Navbar/>
       <Hero/>
+  
     </section>
     <section id="About">
       <About/>
     </section>
-    <section id="Experience"><Parallax type ="experience"/></section>
-    <section><Experience/></section>
+    
+    {/* WORK EXPERIENCE SECTION */}
+
+    {/* <section id="Experience"><Parallax type ="experience"/></section>
+    <section><Experience/></section> */}
+
+
     <section id="Skills">
       <Skills/>
     </section>
@@ -28,6 +35,7 @@ const App = () => {
     <section id="Contact">
       <Contact/>
     </section>
+
   </div>
 };
 

@@ -75,6 +75,8 @@
    
             p{
                 justify-items: center;
+                text-align: justify;
+                text-justify: inter-word;
                 font-size: 20px;
 
                 @include mobile{
